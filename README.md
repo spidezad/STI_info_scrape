@@ -1,7 +1,7 @@
 STI_info_scrape
 ===============================
 
-version number: 0.0.1
+version number: 0.1.0
 author: Tan Kok Hua
 
 Overview
@@ -24,10 +24,15 @@ Or clone the repo:
     
 Contributing
 ------------
-
-TBD
+All ideas/contributions are welcome.
 
 Example
 -------
+    w = STIMainData()
+    w.chromedriver_location = r"D:\download (software)\chromedriver.exe"
+    w.store_location = r'C:\data\temp\STImaindata.csv'
+    kk = w.get_SGX_main_data()
+    print kk.head()
+    w.save_to_file()
 
-TBD
+    sys.exit()
